@@ -26,7 +26,7 @@ class AddRememberTokenToGuests extends Migration
     public function down()
     {
         Schema::table('guests', function($table) {
-            $table->dropColumn('remember_token', 100);
+            $table->dropColumn('remember_token');
         });
     }
 }

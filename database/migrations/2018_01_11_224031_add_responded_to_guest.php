@@ -26,7 +26,7 @@ class AddRespondedToGuest extends Migration
     public function down()
     {
         Schema::table('guests', function($table) {
-            $table->dropColumn('responded', 100);
+            $table->dropColumn('responded');
         });
     }
 }
